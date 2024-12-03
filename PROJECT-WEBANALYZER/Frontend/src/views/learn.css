@@ -1,0 +1,63 @@
+.learn-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.learn-container .slick-dots {
+  bottom: -30px; /* Adjust dot position */
+}
+
+.learn-container .slick-prev,
+.learn-container .slick-next {
+  z-index: 10; /* Ensure navigation arrows are above content */
+  color: #333; /* Customize arrow color */
+}
+
+.learn-container .slick-prev:before,
+.learn-container .slick-next:before {
+  font-size: 24px; /* Adjust arrow size */
+}
+
+/* Container for feature buttons */
+.learn-feature-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px; /* Equal spacing between buttons */
+  margin: 20px auto;
+  max-width: 800px; /* Limit the width of the button container */
+}
+
+/* Individual feature button styling */
+.learn-feature-button {
+  flex: 1 1 calc(25% - 16px); /* Each button takes up 1/4 of the row minus the gap */
+  background-color: black;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  height:60px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Hover effect for feature buttons */
+.learn-feature-button:hover {
+  background-color: #333; /* Slightly lighter black for hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Ensure buttons break into rows */
+.learn-feature-buttons button:nth-child(4n) {
+  margin-right: 0; /* Avoid extra spacing on the last button in a row */
+}
+
+
+@import url('slick-carousel/slick/slick.css');
+@import url('slick-carousel/slick/slick-theme.css');
+

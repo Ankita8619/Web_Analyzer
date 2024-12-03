@@ -1,0 +1,100 @@
+/* Outer container for black background */
+.outer-container {
+  background-image: url('keyboard-5017973_1920.jpg');
+  min-height: 100vh; /* Ensures the container covers the full height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Inner container for the form */
+.dynamic-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  align-items: center;
+  background-color: #6392af; /* Light grey background for the form container */
+  width: 100%; /* Full width */
+  max-width: 600px; /* Max width of the form */
+  padding: 80px; /* Padding around container */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Form heading styling */
+.form-heading {
+  text-align: center; /* Center the heading */
+  margin-bottom: 10px; /* Space between heading and form */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fefdfd;
+}
+
+/* Form container styling */
+.form {
+  width: 80%;
+  max-width: 300px; /* Max width of the form */
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* Styling for each form field (label, input/select) */
+.form-field {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input and select box styling */
+input[type="url"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+/* Input and select focus styling */
+input[type="url"]:focus,
+select:focus {
+  border-color: #41435b; 
+  outline: none;
+}
+
+/* Submit button styling */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #010101;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-button:hover {
+  background-color: #333;
+}
+
+/* Instruction text below URL input */
+.instruction {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}

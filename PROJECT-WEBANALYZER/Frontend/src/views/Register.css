@@ -1,0 +1,126 @@
+/* General Body Styling */
+.register-body { /* Scoped class */
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000; /* Black background for the body */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 150vh; /* Full height */
+}
+
+/* Outer Container */
+.outer-container-register {
+  background-color: #6392af; /* Blue background for outer container */
+  padding: 60px; /* Reduced padding for better alignment */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width */
+  max-width: 600px; /* Limit the max-width to avoid too large of a container */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the container exactly */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), /* Deep shadow for outer effect */
+              0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle inner shadow */
+  border-radius: 15px; /* Rounded corners for smoother appearance */
+}
+
+/* Inner Container (3D Effect) */
+.inner-container-register {
+  background-color: #fff; /* White background for the form */
+  padding: 20px; /* Reduced padding */
+  width: 90%; /* Full width */ /* Rounded corners for the inner container */
+  margin: auto; /* Center the container horizontally */
+  transform: translateY(-10px); /* Slight lift for 3D appearance */
+  position: relative; /* Ensure proper stacking */
+}
+
+/* Optional: Add a soft gradient for depth */
+.inner-container-register {
+  background: linear-gradient(135deg, #ffffff, #f5f5f5); /* Soft gradient */
+}
+
+/* Form Header */
+.inner-container-register h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 22px;
+}
+
+/* Input Box Styling */
+.input-box-register {
+  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.input-box-register input,
+.input-box-register textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff; /* White background for inputs */
+  box-sizing: border-box;
+}
+
+.input-box-register input:focus,
+.input-box-register textarea:focus {
+  border-color: #000000; /* Blue border on focus */
+}
+
+/* File Upload */
+.file-upload-register {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.file-upload-register label {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #000000; /* Button color */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+}
+
+.file-upload-register input[type="file"] {
+  display: none;
+}
+
+.file-name-register {
+  font-size: 13px;
+  color: #000000;
+}
+
+/* Buttons */
+.btn-register {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #000; /* Black background for Register button */
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-register:hover {
+  background-color: #333; /* Slightly darker shade on hover */
+}
+

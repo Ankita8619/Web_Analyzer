@@ -1,0 +1,304 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container-group {
+    width: 70% !important;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .maskgroup-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .maskgroup-card {
+    flex: 1 1 22%;
+    margin: 10px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .dashboard-card-content {
+    display: flex;
+    justify-content: space-between; /* Space between title and value */
+    align-items: center; /* Center vertically */
+    padding: 0 5px; /* Add padding for breathing space */
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .card-title {
+    flex: 1; /* Take available space on the left */
+    text-align: left; /* Align title to the left */
+    padding-right: 10px; /* Add spacing between title and value */
+  }
+  
+  .card-value {
+    flex: 0; /* Ensure it doesn't stretch */
+    text-align: right; /* Align value to the right */
+  }
+  
+  .maskgroup-lower-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .maskgroup-chart-container {
+    flex: 0 1 70%;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-and-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chart {
+    flex: 0 1 60%; /* Adjust width as needed */
+    padding-right: 20px;
+  }
+  
+  .chart-details {
+    flex: 0 1 70%; /* Adjust width as needed */
+    padding-left: 20px;
+  }
+  
+  .maskgroup-one-liner {
+    flex: 0 1 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .maskgroup-reports {
+    margin-top: 20px;
+  }
+  
+  .report-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .report-title, .report-feature {
+    flex: 1;
+  }
+  
+  .report-url {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .report-date {
+    flex: 1;
+    text-align: right;
+  }
+  .report-subfeature {
+    flex: 4;
+    text-align: center;
+  }
+  .view-report-button {
+    width: 130px !important; /* Set a specific width */
+    padding: 10px 10px; /* Adjust padding as needed */
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px; /* Smaller font size */
+  }
+  
+  .view-report-button:hover {
+    background-color: #525252;
+  }
+  
+  .report-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .report-feature {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .report-subfeature {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .report-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .report-url {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* New CSS for DashboardCard text elements */
+  .maskgroup-text145 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .maskgroup-text147 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .maskgroup-text149 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+  }
+  
+  .maskgroup-badge-tag10 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid green;
+    margin-left: 5px;
+  }
+  
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid red;
+    margin-left: 5px;
+  }
+  .container-group {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .maskgroup-lower-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .maskgroup-one-liner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .one-liner-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .one-liner-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .info-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup-close-button {
+    position: absolute;
+    top: -10px;
+    height: 10px;
+    right: 10px;
+    width: 10px;
+    background-color: #fff;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .popup-close-button:hover {
+    background-color: #fff;
+    background: none;
+    color: #ff0000; /* Highlight color on hover */
+    transform: scale(1.2); /* Slightly enlarge the button on hover */
+  }
+  
+  
+  
+  .hidden {
+    display: none;
+  }
